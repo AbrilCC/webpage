@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap'); </style>   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap'); </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@200&display=swap'); </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap'); </style>
+    
+    
+    
+    <title>Aesthetic Sweaters - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+  <body>
+    <main>
+        <section class="top">
+            <p>Los pedidos tienen un tiempo de realización de 20 a 60 días</p>
+            <p>Envíos solo a CABA</p>
+            
+
+        </section>
+
+/* AÑADIR LINKS */
+        <section>
+            <ul class="nav-menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">FOTOS DE CLIENTAS</a></li>
+                <li><a href="#">DISÉÑALO TÚ MISMA</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </section>
+
+        <section class="header">
+            <h1>AESTHETIC SWEATERS</h1>
+        </section>
+
+
+        <div class="white-frame"></div>
+   
+        <section class="container">
+            <button class="handle prev-arrow">&#8249</button>
+            <section class="slider">
+                <img src="https://via.placeholder.com/150?text=1">
+                <img src="https://via.placeholder.com/150?text=2">
+                <img src="https://via.placeholder.com/150?text=3">
+                <img src="https://via.placeholder.com/150?text=4">
+                <img src="https://via.placeholder.com/150?text=5">
+                <img src="https://via.placeholder.com/150?text=6">
+                <img src="https://via.placeholder.com/150?text=7">
+                <img src="https://via.placeholder.com/150?text=8">
+                <img src="https://via.placeholder.com/150?text=9">
+            <button class="handle next-arrow">&#8250</button>
+
+        </section>
+
+        <script>
+            /*Este codigo hace que si vos clickeas en la flechita, cuenta de todas formas como estar clickeando el boton entero*/
+            document.addEventListener("click", e => {
+                let handle  /*declaro la variable handle como una constante sin valor todavia, y modificable*/
+                if(e.target.matches(".handle")) {
+                    handle = e.target
+                } else {
+                    handle = e.target.closest(".handle")
+                }
+                if (handle != null) onHandleClick(handle)
+            })
+
+            function onHandleClick(handle) {
+                const slider = handle.closest(".container").querySelector(".slider")
+                const sliderIndex = parseInt(getComputedStyle(slider).getPropertyValue("--slider-index"))
+
+                if(handle.classList.contains("prev-arrow")) {
+                    slider.style.setProperty("--slider-index", sliderIndex - 1)
+                }
+
+                if(handle.classList.contains("next-arrow")) {
+                    slider.style.setProperty("--slider-index", sliderIndex + 1)
+                }
+
+
+            }
+
+
+
+        </script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

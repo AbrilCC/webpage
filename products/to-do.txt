@@ -1,0 +1,2 @@
+-Añadir un link al boton de favoritos
+-Añadir link al titulo
