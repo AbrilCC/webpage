@@ -312,6 +312,78 @@ input::-webkit-inner-spin-button {
 }
 
 
+
+.big-container {
+    margin-top: 30px;
+}
+
+  .flt-left{
+    float:left;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .carousel{
+    width:100%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .row{
+    width:90%;
+    overflow:hidden;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height:450px;
+  }
+  .row-container{
+    width: 9000px;
+    transition:0.5s;
+  }
+
+  .container{
+    width:400px;
+    float:left;
+    display:grid;
+    row-gap: 40px;
+    margin-right: 80px;
+  }
+
+  .container img {
+    width: 250px;
+    height: 250px;
+
+    float: left;
+    position: relative;
+
+  }
+
+  .clear{
+    clear:both;
+  }
+  .controls{
+    width:100%;
+    margin:auto;
+  }
+  .carousel button{
+    border:none;
+    padding:10px 20px;
+    color:white;
+    background-image: linear-gradient(to right, white 50%);
+    font-weight:bold;
+    font-size: 30px;
+    outline:none;
+    border-radius:3px;
+    height:150px;
+    position:relative;
+  }
+
+
+
+
+
 .modifs {
     margin: 30px;
     font-family: 'Heebo', sans-serif;
