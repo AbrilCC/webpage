@@ -1,5 +1,5 @@
 var right = 0;
-var maxMargin = 960;
+var maxMargin = 910;
 var jumpMargin = 450;
 
 

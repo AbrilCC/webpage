@@ -14,7 +14,7 @@
 
 }
 
-.icon {
+.lines {
     height: 45px;
     width: 45px;
     font-size: 40px;
@@ -123,6 +123,15 @@
 }
 
 .banner{
+    position: relative;
+}
+
+.banner h1{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
     background-position: center;
     background-size: cover;
     margin: auto;
@@ -132,16 +141,24 @@
     cursor: pointer;
 }
 
-.banner h1{
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 60px;
-    /*color: aliceblue;*/
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    /*text-shadow: 1px 2px #999;*/
+.icons {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    gap: 17px;
+
 }
 
+.icon {
+    font-size: 25px;
+    color: rgb(209, 209, 209);
+}
+
+.icon:hover {
+    color: rgb(197, 124, 113);
+    transition: .4s;
+}
 
 .white-frame{
     background-color: white;
@@ -152,10 +169,29 @@
 
 
 #crochet {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Aboreto', cursive;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+#stock {
+    font-family: 'Aboreto', cursive;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+#not-yet-done {
+    font-family: 'Aboreto', cursive;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+#vibe h2 {
+    font-family: 'Aboreto', cursive;
     margin-left: 25px;
     font-size: 26px;
 }
+
 
 .big-container {
     margin-top: 30px;
@@ -180,7 +216,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    height:450px;
+    height:100%;
   }
   .row-container{
     width: 9000px;
@@ -196,13 +232,61 @@
   }
 
   .container img {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
 
     float: left;
-    position: relative;
-
+    transition: transform .2s;
   }
+
+  .container img:hover {
+        opacity: 0.8;
+        transition: 500ms;
+    }
+  
+  .container h4 {
+    font-family: 'Aboreto', cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container h5 {
+    color: rgb(80, 80, 80);
+    margin-top: 5px;
+  }
+
+
+  .container-specific{
+    width:400px;
+    float:left;
+    display:grid;
+    row-gap: 40px;
+    margin-right: 80px;
+  }
+
+  .container-specific img {
+    width: 380px;
+    height: 380px;
+
+    float: left;
+  }
+
+  .container-specific img:hover {
+    opacity: 0.8;
+    transition: 500ms;
+}
+
+
+  .container-specific h4 {
+    font-family: 'Heebo', cursive;
+    font-size: 30px;
+  }
+
+  .container-specific h5 {
+    color: rgb(80, 80, 80);
+  }
+
+
 
   .clear{
     clear:both;
@@ -221,19 +305,194 @@
     outline:none;
     border-radius:3px;
     height:200px;
-    position:relative;
+    position: relative;
+    margin-bottom: 8%;
   }
   
+#vibe-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 80%;
+    gap: 30px;
+    row-gap: 50px;
+
+}
+
+.vibe-box {
+    position: relative;
+    transition: transform .4s;
+}
+
+.vibe-box:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/*PICNIC*/
+.vibe-name-picnic {
+    position: absolute;
+    right: 36%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a .vibe-name-picnic {
+    text-decoration: none;
+
+}
+
+.picnic {
+    background-image: url(images/picnic.jpg);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
+
+/*DARK*/
+.vibe-name-dark {
+    position: absolute;
+    right: 36%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: black !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a .vibe-name-dark {
+    text-decoration: none;
+
+}
+
+.dark {
+    background-image: url(images/dark3.png);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
+
+/*ACADEMIA*/
+.vibe-name-academia {
+    position: absolute;
+    right: 28%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a .vibe-name-academia {
+    text-decoration: none;
+
+}
+
+.academia {
+    background-image: url(images/academia3.png);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
 
 
+/*NIGHT OUT*/
+.vibe-name-night-out {
+    position: absolute;
+    right: 28%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a .vibe-name-night-out {
+    text-decoration: none;
+
+}
+
+.night-out {
+    background-image: url(images/night-out2.png);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
+
+/*COTTAGECORE*/
+.vibe-name-cottagecore {
+    position: absolute;
+    right: 19%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
+
+a .vibe-name-cottagecore {
+    text-decoration: none;
+
+}
+
+.cottagecore {
+    background-image: url(images/cottagecore5.png);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
 
 
+/*COZY*/
+.vibe-name-cozy {
+    position: absolute;
+    right: 38%;
+    top: 34%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    text-decoration: none;
+}
 
+a .vibe-name-cozy {
+    text-decoration: none;
 
+}
 
-
-
-
+.cozy {
+    background-image: url(images/cozy2.png);
+    width: 270px;
+    height: 130px;
+    border-radius: 13%;
+    opacity: .8;
+}
 
 
 
