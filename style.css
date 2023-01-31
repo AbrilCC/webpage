@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .top {
     margin-bottom: 25px;
     width: 100%;
@@ -120,10 +121,12 @@
 .header {
     display: block;
     position: sticky;
+    background-color: white;
 }
 
 .banner{
     position: relative;
+    background-color: white;
 }
 
 .banner h1{
@@ -147,7 +150,6 @@
     right: 10px;
     display: flex;
     gap: 17px;
-
 }
 
 .icon {
@@ -161,7 +163,7 @@
 }
 
 .white-frame{
-    background-color: white;
+    background-color:white;
     width: 100%;
     height: 40px;
 }
@@ -190,6 +192,7 @@
     font-family: 'Aboreto', cursive;
     margin-left: 25px;
     font-size: 26px;
+    border-bottom: 1px solid rgb(160, 160, 160);
 }
 
 
@@ -309,6 +312,8 @@
     margin-bottom: 8%;
   }
   
+
+
 #vibe-container {
     display: flex;
     justify-content: space-between;
@@ -317,7 +322,6 @@
     width: 80%;
     gap: 30px;
     row-gap: 50px;
-
 }
 
 .vibe-box {
@@ -346,7 +350,6 @@
 
 a .vibe-name-picnic {
     text-decoration: none;
-
 }
 
 .picnic {
@@ -373,7 +376,6 @@ a .vibe-name-picnic {
 
 a .vibe-name-dark {
     text-decoration: none;
-
 }
 
 .dark {
@@ -400,7 +402,6 @@ a .vibe-name-dark {
 
 a .vibe-name-academia {
     text-decoration: none;
-
 }
 
 .academia {
@@ -428,7 +429,6 @@ a .vibe-name-academia {
 
 a .vibe-name-night-out {
     text-decoration: none;
-
 }
 
 .night-out {
@@ -455,7 +455,6 @@ a .vibe-name-night-out {
 
 a .vibe-name-cottagecore {
     text-decoration: none;
-
 }
 
 .cottagecore {
@@ -493,6 +492,17 @@ a .vibe-name-cozy {
     border-radius: 13%;
     opacity: .8;
 }
+
+
+
+
+.newsletter {
+    background-image: url(images/newsletter.png);
+    height: 100%;
+    width: 100%;
+    
+}
+
 
 
 
