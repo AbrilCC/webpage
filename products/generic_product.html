@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap'); </style>   
@@ -37,7 +37,7 @@
     <main>
 
         <section class="top">
-            <button class="icon">&#8801;</button>
+            <button class="lines">&#8801;</button>
             <div class="text-slider">
                 <div id="tiempo">Los pedidos tienen un tiempo de realización de 20 a 60 días</div>
                 <div class="barrita">|</div>
@@ -49,16 +49,25 @@
             
 
         <section class="header">
-            <section class="banner">
-                <h1>AESTHETIC SWEATERS</h1>
-            </section>
+                <section class="banner">
+                    <h1>AESTHETIC SWEATERS</h1>
+                    <section class="icons">
+                        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>    
+                    </section>
+                </section>
     
             <section>
                 <ul class="nav-menu">
-                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="#">STOCK</a></li>
+                    <li><a href="https://www.instagram.com/aesthetic_sweaters/" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="#">DISEÑOS</a></li>
+                    <li><a href="#">MOLDES</a></li>
                     <li><a href="#">CONTACTO</a></li>
-                    <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#">FOTOS DE CLIENTAS</a></li>
                     <li><a href="#">FAQs</a></li>
                 </ul>
             </section>
@@ -66,11 +75,11 @@
 
 
         <section class="path">
-            <a href="../index.html" style="text-decoration: none;"><p>Inicio</p></a>
+            <a href="../index.html" style="text-decoration: none !important; color: dimgray;"><p>Inicio</p></a>
             <p> > </p>
-            <a href="#" style="text-decoration: none;"><p>Prod Type</p></a>
+            <a href="#" style="text-decoration: none !important; color: dimgray;"><p>Prod Type</p></a>
             <p> > </p>
-            <a href="generic_product.html" style="text-decoration: none;"><p>Prod Name</p></a>
+            <a href="generic_product.html" style="text-decoration: none !important; color: dimgray;"><p>Prod Name</p></a>
         </section>
 
         <div class="white-frame"></div>
@@ -203,9 +212,11 @@
         <footer>
             <div id="in-footer">
                 <div class="bloque-1">
-                    <div><h2>AESTHETIC SWEATERS</h2></div>
-                    <div id="location"> <i class="fa-solid fa-location-dot"></i> C.A.B.A.</div>
-                    <div id="email"> <i class="fa-regular fa-envelope"></i> crear email</div>    
+                    <h2>AESTHETIC SWEATERS</h2>
+                    <div id="icons-footer">
+                        <div id="location"> <i class="fa-solid fa-location-dot"></i> C.A.B.A.</div>
+                        <div id="email"> <i class="fa-regular fa-envelope"></i> crear email</div>    
+                    </div>
                 </div>
     
                 <div class="bloque-2">
@@ -214,7 +225,15 @@
                     <div>FAQs</div>
                     <div>Cómo comprar</div>
                 </div>
-    
+ 
+                <div class="bloque-mobile-1">
+                    <h3>Ayuda</h3>
+                    <div>Acerca de nosotros</div>
+                    <div>FAQs</div>
+                    <div>Cómo comprar</div>
+                    <div>Términos y condiciones</div>
+                </div>
+
                 <div class="bloque-3">
                     <h3>Categorías</h3>
                     <div>Patchwork Cardigans</div>
@@ -230,11 +249,13 @@
     
                 <div class="bloque-5">
                     <h3>Redes sociales</h3>
-                    <div><img src="images/insta-logo" alt="instagram-logo">Instagram</div>
-                    <div><img src="images/youtube-logo" alt="youtube-logo">YouTube</div>
+                    <a href="https://www.instagram.com/aesthetic_sweaters/"  style="text-decoration: none !important; color: black;" target="_blank"><div><i class="fa-brands fa-instagram"></i>Instagram</div></a>
+                    <a href="#"  style="text-decoration: none !important; color: black;" target="_blank"><div><i class="fa-brands fa-youtube"></i>YouTube</div></a>
                 </div>    
+
+                
             </div>
-            <div id="copyright">&#169; Copyright 2022, MiMarca</div>
+            <div id="copyright">&#169;2022, MiMarca</div>
         </footer>
 
         <script src="main.js" type="text/javascript"></script>
