@@ -219,6 +219,14 @@
     font-weight: bold;
 }
 
+.show {
+    display: block;
+}
+
+
+
+
+
 
 #gallery {
     display: flex;
@@ -229,11 +237,13 @@
 }
 
 
+
 .prod {
     margin-left: 35px;
     margin-right: 35px;
     margin-bottom: 50px;
     position: relative;
+
 
 }
 
